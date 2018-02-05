@@ -1,0 +1,25 @@
+web:
+  build: .
+  volumes:
+    - .:/app
+  volumes_from:
+    - box
+  ports:
+    - "8181:8181"
+  # links:
+  #   - db
+  # env_file:
+  #   - '.env.web'
+
+box:
+  image: busybox
+  volumes:
+    - /box
+
+# db:
+#   image: mysql:5.7
+#   ports:
+#     - "3306:3306"
+#   restart: unless-stopped
+#   env_file:
+#     - '.env.db'
