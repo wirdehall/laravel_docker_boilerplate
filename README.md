@@ -15,7 +15,11 @@ If you don't have it already, check it out: [www.docker.com](https://www.docker.
 Run the following in your terminal to install laravel:
 `./setup.bash your_project_name`
 
-When the installation is done, run `docker-compose up --build` and go to `localhost:8080` to se your freshly installed laravel project.
+When the installation is done, run `docker-compose up --build`
+
+Then generate a key using this command: `docker-compose exec web php artisan key:generate`  
+
+Now surf to `localhost:8080` to se your freshly installed laravel project.
 
 ### Recommended:
 
