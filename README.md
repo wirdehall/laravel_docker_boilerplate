@@ -12,8 +12,16 @@ If you don't have it already, check it out: [www.docker.com](https://www.docker.
 
 ## Usage
 
-Run the following in your terminal:
+Run the following in your terminal to install laravel:
 `./setup.bash your_project_name`
+
+When the installation is done, run `docker-compose up --build` and go to `localhost:8080` to se your freshly installed laravel project.
+
+### Recommended:
+
+It's highly recommended that you change the sql passwords in both .env.db and .env file to something more secure.
+
+Note that this is a setup for development and additional measures needs to be taken to ensure safety for production environments.
 
 ## Workflow
 
